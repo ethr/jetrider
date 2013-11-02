@@ -325,7 +325,7 @@ window.onload = function () {
                                         var x = Math.floor((Math.random()*22)) - (11);
                                         var y = Math.floor((Math.random()*12)) - (6);
                                         var scale = Math.floor(Math.random()*7) + 4;
-                                        var sphere1 = BABYLON.Mesh.CreateSphere("Sphere" + i, 20, 1 /**Math.floor(Math.random()*7) + 4**/, scene);
+                                        var sphere1 = BABYLON.Mesh.CreateSphere("Sphere" + i, 20, 1, scene);
                                         sphere1.scaling = new BABYLON.Vector3(scale, scale, scale);
                                         spheres.push(sphere1);
                                         sphere1.position = new BABYLON.Vector3(x, y, spaceShip.position.z + 150);
